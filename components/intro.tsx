@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import  ProfilImage from "../public/pixelcut-export.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -31,8 +32,8 @@ export default function Intro() {
             }}
           >
             <Image
-              src={`https://marwen-hinaoui.tn/pixelcut-export.png`}
-              alt="Venky portrait"
+              src={ProfilImage}
+              alt="Image Marwen Hinaoui"
               width="350"
               height="350"
               quality="95"
