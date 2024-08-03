@@ -1,14 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   images: {
-    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "marwen-hinaoui.tn",
+        hostname: "drive.google.com",
       },
     ],
+  },
+  experimental: {
+    serverActions: true,
   },
 };
 
